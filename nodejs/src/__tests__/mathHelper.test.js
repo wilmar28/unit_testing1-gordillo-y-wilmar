@@ -1,6 +1,4 @@
-// Paso 1 — Tests de funciones simples
-
-const { add, divide } = require('../mathHelper');
+const { add, divide, subtract, multiply } = require('../mathHelper');
 
 describe('mathHelper', () => {
 
@@ -34,6 +32,34 @@ describe('mathHelper', () => {
 
     it('lanza error al dividir entre cero', () => {
       expect(() => divide(5, 0)).toThrow('No se puede dividir entre cero.');
+    });
+  });
+
+  describe('subtract()', () => {
+    it('resta dos números positivos', () => {
+      expect(subtract(10, 3)).toBe(7);
+    });
+
+    it('resta que da resultado negativo', () => {
+      expect(subtract(2, 8)).toBe(-6);
+    });
+
+    it('resta con cero devuelve el mismo número', () => {
+      expect(subtract(5, 0)).toBe(5);
+    });
+  });
+
+  describe('multiply()', () => {
+    it('multiplica dos números positivos', () => {
+      expect(multiply(4, 5)).toBe(20);
+    });
+
+    it('multiplicar por cero da cero', () => {
+      expect(multiply(9, 0)).toBe(0);
+    });
+
+    it('multiplica números negativos entre sí da positivo', () => {
+      expect(multiply(-3, -4)).toBe(12);
     });
   });
 

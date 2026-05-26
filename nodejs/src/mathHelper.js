@@ -1,6 +1,3 @@
-// Paso 1 — Función simple
-// Funciones puras sin clases ni dependencias externas
-
 function add(a, b) {
   return a + b;
 }
