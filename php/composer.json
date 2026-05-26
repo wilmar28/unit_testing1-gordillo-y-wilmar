@@ -1,0 +1,10 @@
+{
+  "name": "adso/unit-testing-php",
+  "description": "Unit Testing con PHPUnit - ADSO",
+  "require-dev": {
+    "phpunit/phpunit": "^10.5"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  }
+}

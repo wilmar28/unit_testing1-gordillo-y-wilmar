@@ -1,0 +1,12 @@
+{
+  "name": "unit-testing-adso-nodejs",
+  "version": "1.0.0",
+  "description": "Unit Testing con Jest - ADSO",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
